@@ -1,0 +1,7 @@
+{
+  "description": "Variante para estudo de efeito indesejado: fechamento 9x9 funde duas moedas próximas.",
+  "sequence": [
+    {"op": "open", "shape": "ellipse", "size": 5, "iterations": 1},
+    {"op": "close", "shape": "ellipse", "size": 9, "iterations": 1}
+  ]
+}

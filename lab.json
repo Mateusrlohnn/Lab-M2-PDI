@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "lab": "m2.2",
+  "includes": ["m2.1", "m2.2"],
+  "language": "python",
+  "student": { "name": "Mateus Rachadel Lohn" }
+}

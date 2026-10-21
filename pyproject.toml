@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdi-lab"
+version = "2.2.0"
+requires-python = ">=3.9"
+dependencies = ["numpy", "opencv-python"]
+
+[project.scripts]
+pdi_lab = "pdi_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

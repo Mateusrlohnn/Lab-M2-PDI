@@ -1,0 +1,7 @@
+{
+  "description": "Confeitos: fechamento preenche reflexos especulares; abertura grande corta caudas de sombra e pontes finas.",
+  "sequence": [
+    {"op": "close", "shape": "ellipse", "size": 7, "iterations": 1},
+    {"op": "open", "shape": "ellipse", "size": 15, "iterations": 1}
+  ]
+}

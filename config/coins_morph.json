@@ -1,0 +1,7 @@
+{
+  "description": "Moedas: abertura remove respingos do limiar adaptativo; fechamento fecha furos do relevo das moedas.",
+  "sequence": [
+    {"op": "open", "shape": "ellipse", "size": 5, "iterations": 1},
+    {"op": "close", "shape": "ellipse", "size": 7, "iterations": 1}
+  ]
+}

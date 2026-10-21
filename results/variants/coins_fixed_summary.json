@@ -1,0 +1,94 @@
+{
+  "connectivity": 8,
+  "min_area": 300,
+  "foreground_convention": "objeto=255, fundo=0",
+  "morphology_config": "config/coins_morph.json",
+  "sequence": [
+    {
+      "op": "open",
+      "shape": "ellipse",
+      "size": 5,
+      "iterations": 1,
+      "order": 1,
+      "file": "coins_fixed_stage1_open.png",
+      "foreground_pixels": 40434
+    },
+    {
+      "op": "close",
+      "shape": "ellipse",
+      "size": 7,
+      "iterations": 1,
+      "order": 2,
+      "file": "coins_fixed_stage2_close.png",
+      "foreground_pixels": 41465
+    }
+  ],
+  "initial": {
+    "mask": {
+      "width": 384,
+      "height": 303,
+      "channels": 1,
+      "foreground_pixels": 43569,
+      "total_pixels": 116352,
+      "foreground_ratio": 0.374459,
+      "values": [
+        0,
+        255
+      ]
+    },
+    "selected": {
+      "components_raw": 87,
+      "components_filtered": 24,
+      "area_total_raw": 43569,
+      "area_total_filtered": 43379
+    },
+    "by_connectivity": {
+      "4": {
+        "components_raw": 159,
+        "components_filtered": 25,
+        "area_total_raw": 43569,
+        "area_total_filtered": 43251
+      },
+      "8": {
+        "components_raw": 87,
+        "components_filtered": 24,
+        "area_total_raw": 43569,
+        "area_total_filtered": 43379
+      }
+    }
+  },
+  "final": {
+    "mask": {
+      "width": 384,
+      "height": 303,
+      "channels": 1,
+      "foreground_pixels": 41465,
+      "total_pixels": 116352,
+      "foreground_ratio": 0.356375,
+      "values": [
+        0,
+        255
+      ]
+    },
+    "selected": {
+      "components_raw": 25,
+      "components_filtered": 24,
+      "area_total_raw": 41465,
+      "area_total_filtered": 41454
+    },
+    "by_connectivity": {
+      "4": {
+        "components_raw": 26,
+        "components_filtered": 24,
+        "area_total_raw": 41465,
+        "area_total_filtered": 41452
+      },
+      "8": {
+        "components_raw": 25,
+        "components_filtered": 24,
+        "area_total_raw": 41465,
+        "area_total_filtered": 41454
+      }
+    }
+  }
+}
